@@ -1,134 +1,171 @@
-footer{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-end;
+body{
+    background: url("images/background-xhdpi.jpg") no-repeat center;
+    background-size: 100%;
+    height: 95vh;
+    font-family:  sans-serif !important;
+    color: #ffd100 !important;
+    font-size: 10px;
+    font-weight: bold;
 }
-.main-bar{
+.panel-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 60px;
     background: url("images/bgcopy4.png") no-repeat center ;
-    border: 1px green solid;
     background-size: contain;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
+    border: 1px green solid;
 }
 
 
 /*info button style*/
+.info-button, .info-button:hover, .info-button-click{
 
-.info-button{
-    width: 60px;
-    height:60px;
-    background: url("images/button_info.png") 0 -221px no-repeat;
-    background-size: 60px, auto;
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 30px;
     outline: none;
 }
+.info-button{
+    background: url("images/button_info.png") 0 -110px no-repeat;
+    background-size: 100% auto;
+}
 .info-button:hover {
-    width: 60px;
-    height:60px;
-    background: url("images/button_info.png") 0 -148px no-repeat;
-    background-size: 60px, auto;
-    border: none;
-    outline: none;
+    background: url("images/button_info.png") 0 -73px no-repeat;
+    background-size: 100% auto;
 }
 .info-button-click {
-    width: 60px;
-    height:60px;
-    background: url("images/button_info.png") 0 -74px no-repeat;
-    background-size: 60px, auto;
-    border: none;
-    border-radius: 29px;
-    outline: none;
+    background: url("images/button_info.png") 0 -36px no-repeat;
+    background-size: 100% auto;
 }
 .letter-i{
-     background: url("images/info_sign_2.png") 0 0px no-repeat;
+     background: url("images/info_sign.png") 0 0px no-repeat;
      width: 15px;
-     height:34px;
-     background-size: 11px, auto;
+     height:17px;
+     background-size: 6px, auto;
      outline: none;
-     margin-left: 18px;
- }
+     margin-left: 6px;
+
+}
 .info-button:hover .letter-i{
     background: url("images/info_sign.png") 0 0px no-repeat;
     width: 15px;
-    height:34px;
-    background-size: 11px, auto;
+    height:17px;
+    background-size: 6px, auto;
     outline: none;
-    margin-left: 18px;
+    margin-left: 6px;
 }
 
 
 /*total bet field style*/
 
 .totalbet-field{
-    background: url("images/total_bet_field.png") 0 0px no-repeat;
-    height: 60px;
-    width: 210px;
-    background-size: 210px, auto;
+    background: url("images/total_bet_field.png") center no-repeat;
+    height: 30px;
+    width: 110px;
+    background-size: 109px, auto;
+    margin-top: 25px;
+    border: 1px blue solid;
 }
 .minus-bet, .minus-bet:hover, .minus-bet-click{
-    width: 45px;
-    height:45px;
-    background-size: 45px, auto;
+    width: 26px;
+    height:26px;
+    background-size: 26px, auto;
     border: none;
     border-radius: 30px;
     outline: none;
+    margin-right: 3px;
 }
 .minus-bet{
-    background: url("images/button_bet_minus_plus.png") 0 -174px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -101px no-repeat;
+    background-size: 26px, auto;
 }
 .minus-bet:hover {
-    background: url("images/button_bet_minus_plus.png") 0 -115px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -67px no-repeat;
+    background-size: 26px, auto;
 }
 .minus-bet-click{
-    background: url("images/button_bet_minus_plus.png") 0 -56px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -34px no-repeat;
+    background-size: 26px, auto;
 }
 .minus-sign, .minus-bet:hover .minus-sign{
-     width: 22px;
-     height: 15px;
-     margin-left: 6px;
-     margin-bottom: 2px;
+     width: 14px;
+     height: 9px;
+    margin-bottom: 5px;
  }
 .minus-sign{
-    background: url("images/plus_minus_sign.png") 0 -32px no-repeat;
-    background-size: 180px, auto;
+    background: url("images/plus_minus_sign.png") 0 0px no-repeat;
+    background-size: 120px, auto;
 
 }
 .minus-bet:hover .minus-sign{
     background: url("images/plus_minus_sign.png") 0 0px no-repeat;
-    background-size: 180px, auto;
+    background-size: 120px, auto;
 }
+.total-bet{
+    width: 40px;
+    height: 20px;
+    background: url("images/TOTAL BET.png")  no-repeat top;
+    background-size: 40px auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+
 .plus-bet, .plus-bet:hover, .plus-bet-click{
-    width: 45px;
-    height:45px;
-    background-size: 45px, auto;
+    width: 26px;
+    height:26px;
+    background-size: 26px, auto;
     border: none;
     border-radius: 30px;
     outline: none;
+    margin-left: 5px;
 }
 .plus-bet{
-    background: url("images/button_bet_minus_plus.png") 0 -174px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -101px no-repeat;
+    background-size: 26px, auto;
 }
 .plus-bet:hover {
-    background: url("images/button_bet_minus_plus.png") 0 -115px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -67px no-repeat;
+    background-size: 26px, auto;
 }
 .plus-bet-click{
-    background: url("images/button_bet_minus_plus.png") 0 -56px no-repeat;
-    background-size: 45px, auto;
+    background: url("images/button_bet_minus_plus.png") 0 -34px no-repeat;
+    background-size: 26px, auto;
+}
+.plus-sign, .plus-bet:hover .plus-sign{
+    width: 14px;
+    height: 13px;
+    margin-bottom: 1px;
 }
 .plus-sign{
-    background: url("images/plus_minus_sign.png") 20px -32px no-repeat;
-    background-size: 180px, auto;
+    background: url("images/plus_sign.png") 0 0px no-repeat;
+    background-size: 13px, auto;
 
 }
 .plus-bet:hover .plus-sign{
-    background: url("images/plus_minus_sign.png") 0 0px no-repeat;
-    background-size: 180px, auto;
+    background: url("images/plus_sign.png") 0 0px no-repeat;
+    background-size: 13px, auto;
+}
+
+
+/*coin field style*/
+.coin-field{
+    background: url("images/coin_field.png") 0 0px no-repeat;
+    height: 30px;
+    width: 60px;
+    background-size: 60px, auto;
+    border: yellow 1px solid;
+}
+.coin{
+    margin-top: 5px;
+    width: 60px;
+    height: 30px;
+    background: url("images/COIN.png")  no-repeat top;
+    background-size: 20px auto;
+    text-align: center;
+    line-height: 30px;
 }

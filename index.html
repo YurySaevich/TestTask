@@ -6,21 +6,26 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<footer>
-    <div class="main-bar">
+<div class="panel-container">
         <button class="info-button" id="info-button">
             <div class="letter-i"></div>
         </button>
-        <div class="totalbet-field">
-            <button class="minus-bet" id="minus-bet">
+        <table class="totalbet-field">
+            <tr>
+            <td><button class="minus-bet" id="minus-bet">
                 <div class="minus-sign"></div>
-            </button>
-            <button class="plus-bet" id="plus-bet">
+            </button></td>
+            <td><div class="total-bet">&yen 300 </div></td>
+            <td><button class="plus-bet" id="plus-bet">
                 <div class="plus-sign"></div>
-            </button>
+            </button></td>
+            </tr>
+        </table>
+        <div class="coin-field">
+            <div class="coin">&yen 20 </div>
         </div>
-    </div>
-</footer>
-<script src="main.js"></script>
+</div>
 </body>
+<script src="main.js"></script>
+
 </html>
