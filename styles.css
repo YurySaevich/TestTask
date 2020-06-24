@@ -22,12 +22,15 @@ body{
 
 /*info button style*/
 .info-button, .info-button:hover, .info-button-click{
-
+    display: inline-block;
     width: 30px;
     height: 30px;
     border: none;
     border-radius: 30px;
     outline: none;
+    margin-left: 35px;
+    vertical-align: top;
+    margin-top: 20px;
 }
 .info-button{
     background: url("images/button_info.png") 0 -110px no-repeat;
@@ -63,12 +66,13 @@ body{
 /*total bet field style*/
 
 .totalbet-field{
+    display: inline-block;
     background: url("images/total_bet_field.png") center no-repeat;
     height: 30px;
     width: 110px;
     background-size: 109px, auto;
-    margin-top: 25px;
-    border: 1px blue solid;
+    margin-top: 20px;
+    vertical-align: top;
 }
 .minus-bet, .minus-bet:hover, .minus-bet-click{
     width: 26px;
@@ -105,6 +109,8 @@ body{
     background: url("images/plus_minus_sign.png") 0 0px no-repeat;
     background-size: 120px, auto;
 }
+
+
 .total-bet{
     width: 40px;
     height: 20px;
@@ -122,7 +128,7 @@ body{
     border: none;
     border-radius: 30px;
     outline: none;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 .plus-bet{
     background: url("images/button_bet_minus_plus.png") 0 -101px no-repeat;
@@ -154,18 +160,38 @@ body{
 
 /*coin field style*/
 .coin-field{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
     background: url("images/coin_field.png") 0 0px no-repeat;
     height: 30px;
     width: 60px;
     background-size: 60px, auto;
-    border: yellow 1px solid;
 }
 .coin{
     margin-top: 5px;
     width: 60px;
     height: 30px;
     background: url("images/COIN.png")  no-repeat top;
-    background-size: 20px auto;
+    background-size: 18px auto;
     text-align: center;
     line-height: 30px;
+}
+
+
+/*good luck field*/
+.good-luck-field{
+    display: inline-block;
+    background: url("images/good_luck_field.png") no-repeat center;
+    height: 55px;
+    width: 228px;
+    background-size: 228px, auto;
+    vertical-align: bottom;
+    margin-top: 5px;
+}
+.good-luck{
+    background: url("images/GOOD LUCK.png")  no-repeat center;
+    background-size: 170px;
+    height: 50px;
+    width: 228px;
 }
