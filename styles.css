@@ -1,0 +1,134 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-end;
+}
+.main-bar{
+    background: url("images/bgcopy4.png") no-repeat center ;
+    border: 1px green solid;
+    background-size: contain;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*info button style*/
+
+.info-button{
+    width: 60px;
+    height:60px;
+    background: url("images/button_info.png") 0 -221px no-repeat;
+    background-size: 60px, auto;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.info-button:hover {
+    width: 60px;
+    height:60px;
+    background: url("images/button_info.png") 0 -148px no-repeat;
+    background-size: 60px, auto;
+    border: none;
+    outline: none;
+}
+.info-button-click {
+    width: 60px;
+    height:60px;
+    background: url("images/button_info.png") 0 -74px no-repeat;
+    background-size: 60px, auto;
+    border: none;
+    border-radius: 29px;
+    outline: none;
+}
+.letter-i{
+     background: url("images/info_sign_2.png") 0 0px no-repeat;
+     width: 15px;
+     height:34px;
+     background-size: 11px, auto;
+     outline: none;
+     margin-left: 18px;
+ }
+.info-button:hover .letter-i{
+    background: url("images/info_sign.png") 0 0px no-repeat;
+    width: 15px;
+    height:34px;
+    background-size: 11px, auto;
+    outline: none;
+    margin-left: 18px;
+}
+
+
+/*total bet field style*/
+
+.totalbet-field{
+    background: url("images/total_bet_field.png") 0 0px no-repeat;
+    height: 60px;
+    width: 210px;
+    background-size: 210px, auto;
+}
+.minus-bet, .minus-bet:hover, .minus-bet-click{
+    width: 45px;
+    height:45px;
+    background-size: 45px, auto;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.minus-bet{
+    background: url("images/button_bet_minus_plus.png") 0 -174px no-repeat;
+    background-size: 45px, auto;
+}
+.minus-bet:hover {
+    background: url("images/button_bet_minus_plus.png") 0 -115px no-repeat;
+    background-size: 45px, auto;
+}
+.minus-bet-click{
+    background: url("images/button_bet_minus_plus.png") 0 -56px no-repeat;
+    background-size: 45px, auto;
+}
+.minus-sign, .minus-bet:hover .minus-sign{
+     width: 22px;
+     height: 15px;
+     margin-left: 6px;
+     margin-bottom: 2px;
+ }
+.minus-sign{
+    background: url("images/plus_minus_sign.png") 0 -32px no-repeat;
+    background-size: 180px, auto;
+
+}
+.minus-bet:hover .minus-sign{
+    background: url("images/plus_minus_sign.png") 0 0px no-repeat;
+    background-size: 180px, auto;
+}
+.plus-bet, .plus-bet:hover, .plus-bet-click{
+    width: 45px;
+    height:45px;
+    background-size: 45px, auto;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.plus-bet{
+    background: url("images/button_bet_minus_plus.png") 0 -174px no-repeat;
+    background-size: 45px, auto;
+}
+.plus-bet:hover {
+    background: url("images/button_bet_minus_plus.png") 0 -115px no-repeat;
+    background-size: 45px, auto;
+}
+.plus-bet-click{
+    background: url("images/button_bet_minus_plus.png") 0 -56px no-repeat;
+    background-size: 45px, auto;
+}
+.plus-sign{
+    background: url("images/plus_minus_sign.png") 20px -32px no-repeat;
+    background-size: 180px, auto;
+
+}
+.plus-bet:hover .plus-sign{
+    background: url("images/plus_minus_sign.png") 0 0px no-repeat;
+    background-size: 180px, auto;
+}
