@@ -32,6 +32,28 @@ betPlus.addEventListener('mouseup', () => {
     betPlus.classList.remove('plus-bet-click');
 }, false);
 
+
+turboSwitch.addEventListener('mousedown',() => {
+    if (turboButton.dataset.id !== 'green') {
+        turboSwitch.classList.remove('turbo-button-switch');
+        turboSwitch.classList.add('turbo-button-switch-down');
+    }
+    else if (turboButton.dataset.id === 'green'){
+        turboSwitch.classList.remove('turbo-button-switch-click');
+        turboSwitch.classList.add('turbo-button-switch-down');
+    }
+},false);
+turboSwitch.addEventListener('mouseup',() => {
+    if (turboButton.dataset.id !== 'green') {
+        turboSwitch.classList.remove('turbo-button-switch-down');
+        turboSwitch.classList.add('turbo-button-switch');
+    }
+    else if (turboButton.dataset.id === 'green'){
+        turboSwitch.classList.remove('turbo-button-switch-down');
+        turboSwitch.classList.add('turbo-button-switch-click');
+    }
+},false);
+
 turboSwitch.addEventListener('click',() => {
     if (turboButton.dataset.id !== 'green') {
         turboButton.classList.add('turbo-button');
@@ -46,13 +68,5 @@ turboSwitch.addEventListener('click',() => {
         turboSwitch.classList.remove('turbo-button-switch');
         turboButton.dataset.id = 'red';
     }
-},false);
-turboSwitch.addEventListener('mousedown',() => {
-    turboSwitch.classList.remove('turbo-button-switch');
-    turboSwitch.classList.add('turbo-button-switch-down');
-},false);
-turboSwitch.addEventListener('mouseup',() => {
-    turboSwitch.classList.remove('turbo-button-switch-down');
-    turboSwitch.classList.add('turbo-button-switch');
 },false);
 
